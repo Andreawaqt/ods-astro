@@ -57,6 +57,13 @@ h6 {
     color: var(--default-color);
     font-family: var(--default-font);
 }
+/* .bg-image{
+    background-image: url(/public/img/bg.png);
+    background-size: cover;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: top;
+} */
 
 .underline {
     position: relative;
