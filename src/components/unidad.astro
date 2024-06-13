@@ -1,0 +1,20 @@
+---
+const { title, pasos } = Astro.props;
+console.log(pasos);
+---
+
+<div>
+    <h1>{title}</h1>
+    <ul>
+        {
+            pasos.map((paso) => {
+                return (
+                    <li>
+                        {paso.paso}
+                        <li>{paso.contenido.titulo}</li>
+                    </li>
+                );
+            })
+        }
+    </ul>
+</div>
