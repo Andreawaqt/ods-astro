@@ -2,7 +2,7 @@ import BaseController from './BaseController';
 
 class UserController extends BaseController {
     constructor(id, dni, pass, gmail) {
-        super('', '');
+        super('https://app.nocodb.com/api/v2/tables', '');
         this.id = id;
         this.dni = dni;
         this.pass = pass;
