@@ -4,11 +4,11 @@ import CourseController from "../controllers/CourseController";
 import UserController from "../controllers/UserController";
 let analystController = new CourseController("mj97hqc55wg51mo", "analyst");
 let usersAndAnalyst = await analystController.getAll();
-console.log(usersAndAnalyst)
-import data from "../data/data.json";
+//console.log(usersAndAnalyst)
+import fullData from "../data/data.json";
 let users = new UserController();
 let usersData = await users.getUser();
-console.log(usersData)
+//console.log(usersData)
 
 ---
 
@@ -39,7 +39,14 @@ console.log(usersData)
 <body>
     <div class="container">
         
-   
+
+        {
+            usersData.map(user => (
+                usersAndAnalyst.filter(nextCourse => nextCourse.userID === user.Id).map(courseInfoUser => (
+                    console.log(user.Id, courseInfoUser.userID)
+                ))
+            ))
+        }
         
     </div>
 </body>
