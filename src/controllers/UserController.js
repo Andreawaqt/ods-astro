@@ -2,12 +2,12 @@ import BaseController from './BaseController';
 
 class UserController extends BaseController {
     //colocamos la url de la tabla y el nombre
-    constructor(id, dni, pass, gmail) {
-        super('https://app.nocodb.com/api/v2/tables', 'users');
-        this.id = id;
+    constructor(name, dni, pass, email) {
+        super('m33a500jc4iey3u', 'users');
+        this.name = name;
         this.dni = dni;
         this.pass = pass;
-        this.gmail = gmail;
+        this.email = email;
     }
 
     async getUser() {
