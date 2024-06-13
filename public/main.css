@@ -13,23 +13,11 @@
   --default-font: "Ubuntu Sans Mono", monospace;
   --heading-font: "Chakra Petch", sans-serif;
   --emphasis-font: "VT323", monospace;
-}
-
-/**
- * Defines CSS variables for the default background color, component color, heading color, accent color, and default text color for the application.
- */
-.root {
   --background-color: #fafafaff;
   --component-color: #c42021ff;
   --heading-color: #ffbc0aff;
   --accent-color: #568259ff;
   --default-color: #1e1e1eff;
-}
-
-/**
- * Defines CSS variables for the navigation bar styles, including the colors for the main nav, hover state, dropdown background, and dropdown hover state.
- */
-:root {
   --nav-color: #fafafaff;
   --nav-hover-color: #c42021ff;
   --nav-dropdown-background-color: #fafafaff;
@@ -37,9 +25,6 @@
   --nav-dropdown-hover-color: #c42021ff;
 }
 
-/**
- * Enables smooth scrolling behavior throughout the application.
- */
 :root {
   scroll-behavior: smooth;
 }
