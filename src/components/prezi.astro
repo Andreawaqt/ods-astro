@@ -1,32 +1,51 @@
 ---
 const preziUrl = "https://prezi.com/p/embed/QTCPf1uIcNyapXymoUrm/?autoplay=1";
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prezi Pantalla Completa</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            min-height: 100%;
-            overflow: hidden;
-        }
-        #iframe_container {
-            top: 0;
-            left: 0;
-            width: 100%;
-            min-height: 100vh;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <div id="prezi">
-    <iframe src="https://prezi.com/p/embed/gdCpq8jed2EjN29RSuR4/?autoplay=1" id="iframe_container" allowfullscreen="" allow="autoplay; fullscreen"></iframe>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Prezi Pantalla Completa</title>
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                min-height: 100%;
+                overflow: hidden;
+            }
+            #iframe_container {
+                top: 0;
+                left: 0;
+                width: 100%;
+                min-height: 100vh;
+                border: none;
+            }
+            #prezi {
+                position: relative;
+            }
+
+            .arriba {
+                position: absolute;
+                bottom: 32px;
+                right: 32px;
+                z-index: 100;
+                padding: 4px 6px;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="prezi">
+            <iframe
+                src="https://prezi.com/p/embed/gdCpq8jed2EjN29RSuR4/?autoplay=1"
+                id="iframe_container"
+                allowfullscreen=""
+                allow="autoplay; fullscreen"></iframe>
+            <div class="arriba"><a href="#">Volver Home</a></div>
+        </div>
+    </body>
 </html>
