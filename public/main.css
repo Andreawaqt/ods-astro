@@ -26,41 +26,43 @@
 }
 
 :root {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     color: var(--default-color);
     background-color: var(--background-color);
     font-family: var(--default-font);
-    font-size:x-large;
-  }
-  
-  a {
+    font-size: x-large;
+}
+
+a {
     color: var(--accent-color);
     text-decoration: none;
     transition: 0.3s;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: color-mix(in srgb, var(--accent-color), transparent 25%);
     text-decoration: none;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--heading-color);
     font-family: var(--default-font);
-  }
-  .underline {
-    position: relative; /* Agregado para posicionar correctamente el pseudo-elemento */
-  }
-  
-  .underline:hover a:before {
+}
+
+.underline {
+    position: relative;
+    /* Agregado para posicionar correctamente el pseudo-elemento */
+}
+
+.underline:hover a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -70,8 +72,9 @@ body {
     visibility: visible;
     width: 100%;
     transition: all 0.3s ease-in-out 0s;
-  }
-  .underline:before {
+}
+
+.underline:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -81,10 +84,9 @@ body {
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
-  }
-  .underline:hover:before {
+}
+
+.underline:hover:before {
     visibility: visible;
     width: 100%;
-  }
-
-  
+}
