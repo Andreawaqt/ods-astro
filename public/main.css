@@ -10,24 +10,23 @@
  * These font variables are used to consistently apply the desired typography styles across the application.
  */
 :root {
-  --default-font: "Ubuntu Sans Mono", monospace;
-  --heading-font: "Chakra Petch", sans-serif;
-  --emphasis-font: "VT323", monospace;
-  --background-color: #fafafaff;
-  --component-color: #c42021ff;
-  --heading-color: #ffbc0aff;
-  --accent-color: #568259ff;
-  --default-color: #1e1e1eff;
-  --nav-color: #fafafaff;
-  --nav-hover-color: #c42021ff;
-  --nav-dropdown-background-color: #fafafaff;
-  --nav-dropdown-color: #fafafaff;
-  --nav-dropdown-hover-color: #c42021ff;
+    --default-font: "Ubuntu Sans Mono", monospace;
+    --heading-font: "Chakra Petch", sans-serif;
+    --emphasis-font: "VT323", monospace;
+    --background-color: #fafafaff;
+    --component-color: #c42021ff;
+    --heading-color: #ffbc0aff;
+    --accent-color: #568259ff;
+    --default-color: #1e1e1eff;
+    --nav-color: #fafafaff;
+    --nav-hover-color: #c42021ff;
+    --nav-dropdown-background-color: #fafafaff;
+    --nav-dropdown-color: #fafafaff;
+    --nav-dropdown-hover-color: #c42021ff;
+    scroll-behavior: smooth;
+
 }
 
-:root {
-    scroll-behavior: smooth;
-}
 
 body {
     color: var(--default-color);
