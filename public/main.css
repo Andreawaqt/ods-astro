@@ -48,6 +48,7 @@ body {
     color: var(--default-color);
     background-color: var(--background-color);
     font-family: var(--default-font);
+    font-size:x-large;
   }
   
   a {
@@ -69,6 +70,36 @@ body {
   h6 {
     color: var(--heading-color);
     font-family: var(--default-font);
+  }
+  .underline {
+    position: relative; /* Agregado para posicionar correctamente el pseudo-elemento */
+  }
+  
+  .underline:hover a:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--nav-hover-color);
+    visibility: visible;
+    width: 100%;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .underline:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--nav-hover-color);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .underline:hover:before {
+    visibility: visible;
+    width: 100%;
   }
 
   
