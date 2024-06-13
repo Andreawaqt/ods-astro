@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     registrationForm.addEventListener('submit', async function(event) {
         event.preventDefault();
 
-        const nameU = document.getElementById('name').value;
-        const dniU = document.getElementById('dni').value;
-        const emailU = document.getElementById('email').value;
-        const passU = document.getElementById('pass').value;
+        const nameU = document.getElementById('name');
+        const dniU = document.getElementById('dni');
+        const emailU = document.getElementById('email');
+        const passU = document.getElementById('pass');
 
         try {
             const newUser = await users.createUser(nameU, dniU, passU, emailU);
@@ -117,7 +117,6 @@ function selectStep(unidad, pasoAnterior) {
     </form>
 
 
-    <script src="crearUser.js"></script>
 </body>
 </html>
 
