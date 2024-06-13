@@ -15,10 +15,19 @@ class UserController extends BaseController {
         return user;
 
     }
+    async createUser(name, dni, pass, email) {
+        let user = {
+            "name": name,
+            "dni": dni,
+            "pass": pass,
+            "email": email
+        }
+        return user;
+    }
 
-    async registerUser(data) {
+    async registerUser(user) {
         try {
-            const newUser = await this.createItem(data);
+            const newUser = await this.createItem(user);
             return newUser;
         } catch (error) {
             console.error("Error al registrar el usuario:", error);

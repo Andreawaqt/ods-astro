@@ -12,6 +12,10 @@ class CourseController extends BaseController {
         let course = await this.getAll();
         return course;
     }
+    async getUnidad(id) {
+        let unidad = await this.getItem(id);
+        return unidad;
+    }
 
 }
 
