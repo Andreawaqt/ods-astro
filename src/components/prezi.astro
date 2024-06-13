@@ -1,8 +1,32 @@
 ---
 const preziUrl = "https://prezi.com/p/embed/QTCPf1uIcNyapXymoUrm/?autoplay=1";
 ---
-<div id="prezi">
-<iframe src={preziUrl} id="iframe_container" frameborder="0"  allowfullscreen allow="autoplay; fullscreen" height="315" width="560" class="prezi-embed"></iframe>
-
-</div>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezi Pantalla Completa</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+            overflow: hidden;
+        }
+        #iframe_container {
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="prezi">
+    <iframe src="https://prezi.com/p/embed/QTCPf1uIcNyapXymoUrm/?autoplay=1" id="iframe_container" allowfullscreen="" allow="autoplay; fullscreen"></iframe>
+    </div>
+</body>
+</html>
