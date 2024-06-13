@@ -12,6 +12,8 @@ class CourseController extends BaseController {
         let course = await this.getAll();
         return course;
     }
+    a
+
 
 }
 
