@@ -3,6 +3,9 @@ import BaseController from "../controllers/BaseController"
 import CourseController from "../controllers/CourseController"
 import UserController from "../controllers/UserController"
 import data from "../data/data.json"
+let cyberController= new CourseController('medaapjtitzwxtf','cyber'); 
+let usersAtCyber= await cyberController.getAll();
+
 ---
 
 <!DOCTYPE html>
@@ -17,6 +20,8 @@ import data from "../data/data.json"
 </head>
 <body>
     <div class="container">
+        
+   
         
     </div>
 </body>
