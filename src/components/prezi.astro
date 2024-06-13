@@ -1,0 +1,23 @@
+---
+const preziUrl = "https://prezi.com/p/embed/QTCPf1uIcNyapXymoUrm/?autoplay=1";
+---
+
+<iframe src={preziUrl} id="iframe_container" frameborder="0"  allowfullscreen allow="autoplay; fullscreen" height="315" width="560" class="prezi-embed"></iframe>
+
+<style>
+  .prezi-embed {
+    height: 315px;
+    width: 560px;
+    border: none;
+    overflow: hidden; /* Ocultar la parte de abajo */
+  }
+
+  .prezi-embed::-webkit-scrollbar {
+    display: none; /* Ocultar barra de desplazamiento en Webkit (Chrome, Safari) */
+  }
+
+  .prezi-embed {
+    -ms-overflow-style: none;  /* Ocultar barra de desplazamiento en IE y Edge */
+    scrollbar-width: none;  /* Ocultar barra de desplazamiento en Firefox */
+  }
+</style>
