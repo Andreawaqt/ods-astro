@@ -1,0 +1,45 @@
+---
+import BaseController from "../controllers/BaseController";
+import CourseController from "../controllers/CourseController";
+import UserController from "../controllers/UserController";
+let analystController = new CourseController("mj97hqc55wg51mo", "analyst");
+let usersAndAnalyst = await analystController.getAll();
+let cyberController= new CourseController("medaapjtitzwxtf","cyber");
+let usersCyber= await cyberController.getAll();
+let devController= new CourseController("mfwt7k74aqa4waf","dev");
+let usersDev= await devController.getAll();
+
+console.log(usersAndAnalyst)
+import data from "../data/data.json";
+
+let users = new UserController();
+let usersData = await users.registerUser();
+
+console.log(usersData)
+
+//crear usuario
+//seleccionar un curso (campo único)
+//primero las unidades
+
+function selecteCurs(opcion){
+    if(opcion === "analyst"){
+        analystController.getAll();
+    }else if(opcion==="cyber"){
+        cyberController.getAll();
+    }else if(opcion==="dev"){
+        devController.getAll();
+    }
+}
+
+
+---
+<html>
+    <head>
+
+    </head>
+    <body>
+    <button>
+        </button> 
+
+    </body>
+</html>
