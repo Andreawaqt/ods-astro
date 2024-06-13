@@ -9,7 +9,9 @@ import fullData from "../data/data.json";
 let users = new UserController();
 let usersData = await users.getUser();
 //console.log(usersData)
-
+import DataUserCourse from "../controllers/DataUserCourse"
+let newDataPrueba = new DataUserCourse(1,"analyst");
+console.log(newDataPrueba.courseData())
 ---
 
 <!doctype html>
